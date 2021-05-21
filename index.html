@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<div id='bgImage'>
 <div class="container" id="bg">
 	<div class="row justify-content-center" id="nav">
 		<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
@@ -33,13 +34,17 @@
 			
 		</div>
 	</div><!--end of #intro-->
+</div> <!--end of .container-->
+</div>
+<div class="container">
 	<div class="row">
 		<div class="col-md-12" id="about">
 			<h1>I'm an enthusiastic & detail-oriented Mechanical & Software Engineer.</h1></br>
-			<h2>Passionate, Highly Motivated Mechanical Engineering and Computing student. Have a Bias for Action, Breaking down and Tackling complex problems efficiently. Interested in automation, robots and product development from conception to launch.</h2></br>
+			<h2>Passionate, Highly Motivated Mechanical Engineering and Computing student. Having a Bias for Action, Breaking down and Tackling complex problems efficiently. Interested in automation, robotics and product development from conception to launch.</h2></br>
 		</div>
 	</div>
 </div> <!--end of .container-->
+
 
 
 
@@ -50,41 +55,67 @@
 				<h2>Projects</h2></br>
 
 			</div>
-			<div class="col-md-4" id="prj0">
+			<div class="col-md-12 projects" id="prj-tunnel">
+				<h3>Inspection & Cleaning Robot</h3></br>
+				<h4>Creating an autonomous robot that can carry out inspection and cleaning in an unknown place. Deep Learning is used for detecting defects inside a tunnel. To achieve an autonomous navigation control, Simultaneous Localization and Mapping (SLAM) is implemented for controlling the robot movement in a new dark environment.</h4></br>
+			</div>
+			<div class="col-md-8 projects" id="prj0">
 				<h3>Rescue Robot Car</h3></br>
-				<h4>Designing a car with the use of Artificial Intelligence that is able to grip and lift an object, climb the stair, walk along the uneven floor, recognize the traffic light signal and open a locked door automatically.</h4></br>
+				<h4>Developing a robot with the implementation of Artificial Intelligence that is able to grip and lift an object, climb the stair, walk along the uneven floor, recognize the traffic light signal and open a locked door automatically.</h4></br>
+				<div id="prize"><h2>Rexroth Industry 4.0 Scholarship</h2></div>
 			</div>
-			<div class="col-md-4" id="prj1">
-				<h3>System Development - Collection</h3></br>
-				<h4>Designing and developing a system with forum features that contain login, comments, games and assignments collection.</h4></br>
+			<div class="col-md-4 projects" id="prj-coins">
+				<h3>Coins Recognition</h3></br>
+				<h4>Using Deep neural network and Convolutional Neural Network to perform real time detection and identification of coins and its value.</h4></br>
 			</div>
-			<div class="col-md-4" id="prj2">
-				<h3>System Development - Attendance</h3></br>
-				<h4>Developing a smart student card information system with the aid of Arduino, RFID, PHP and database to automatically takeand record the attendance of students.</h4></br>
-			</div>
-			<div class="col-md-4" id="prj3">
-				<h3>Obstacle Avoiding Car</h3></br>
+			<div class="col-md-5 projects" id="prj3">
+				<h3>Obstacle Avoiding Robot</h3></br>
 				<h4>Designing and building an Arduino robotic car with the use of the ultrasonic sensor.</h4></br>
 			</div>	
-			<div class="col-md-4" id="prj4">
+			<div class="col-md-7 projects" id="prj5">
+				<h3>Smart City Design</h3></br>
+				<h4>Leading a multi-disciplinary team to illustrate how Hong Kong could be “smarter” with the aid of mini models. Arduino, Raspberry Pi, and different kind of sensors are used to visualize our idea.</h4></br></br>
+
+				<div id="prize"><h2>Champion</h2></div>
+			</div>
+			<div class="col-md-6 projects" id="prj6">
+				<h3>Mobile App Design</h3></br>
+				<h4>Designing and building a mobile application that allows the blind to walk safely with the use of the proximity sensor on mobile phone. Users can choose between the walk-along the wall mode or object detection mode.Further improvement will be using an extra ultrasonic sensor and the NFC technology to guide and give direction to the user when walking through the street.</h4></br>
+				<div id="prize"><h2>First Runner Up</h2></div>
+			</div>
+			<div class="col-md-6 projects" id="prj-luci">
+				<h3>Movies Discussion Forum</h3></br>
+				<h4>Building a forum for discussing TV dramas and movies. Amazon Web Services and Amazon Elastic Compute Cloud are used in this project for providing real time information and web hosting.</h4></br>
+			</div>
+
+
+			<div class="col-md-8 projects" id="prj-netServer">
+				<h3>Web Server</h3></br>
+				<h4>Building a web server in Java. Website can be hosted and accessed in LAN. Able to Accept or Reject Incoming requests based on their headers.</h4></br>
+			</div>
+			<div class="col-md-4 projects" id="prj2">
+				<h3>Attendance System</h3></br>
+				<h4>Developing a smart student card information system with the aid of Arduino, RFID, PHP and database to automatically takeand record the attendance of students.</h4></br>
+			</div>
+			<div class="col-md-4 projects" id="prj1">
+				<h3>Assignment Collection System</h3></br>
+				<h4>Developing a system with forum features that contain login, comments, games and assignments collection.</h4></br>
+			</div>
+
+
+			<div class="col-md-4 projects" id="prj4">
 				<h3>Robotic Hand</h3></br>
 				<h4>Building and 3D printing a robotic hand with five fingers with the use of the microcontroller Arduino.</h4></br>
 			</div>	
-			<div class="col-md-4" id="prj5">
-				<h3>Smart City Design</h3></br>
-				<h4>Leading a multi-disciplinary team of 5 to illustrate how Hong Kong could be “smarter” with the aid of mini models, such as Arduino.</h4></br>
-			</div>
-			<div class="col-md-4" id="prj6">
-				<h3>Mobile App Design</h3></br>
-				<h4>Designing and building a mobile application that allows the blind to walk safely with the use of the proximity sensor on mobile phone. Further improvement will be using an extra ultrasonic sensor and the NFC technology to guide and give direction to the user when walking through the street.</h4></br>
-			</div>
-			<div class="col-md-4" id="prj7">
+
+
+			<div class="col-md-4 projects" id="prj7">
 				<h3>Games Development</h3></br>
-				<h4>Building games with Unity and Adobe Flash to have more hands on experience with C#, Action Script, Algorithm Design and Environment design.</h4></br>
+				<h4>Building different type of games (platform game, action game, etc) mainly with Unity to have more hands on experience with C#, Action Script, Algorithm Design and Environment settings.</h4></br>
 			</div>
-			<div class="col-md-4" id="prj8">
+			<div class="col-md-4 projects" id="prj8">
 				<h3>Multimedia Editing</h3></br>
-				<h4>Editing different kind of multimedia elements with the combination use of Adobe After Effects, Premiere Pro, Audition, Lightroom, Photoshop, Illustrator, InDesign, etc.</h4></br>
+				<h4>Editing various multimedia elements, like photos and videos with Adobe Creative Suite. Adobe After Effects, Premiere Pro, Animate, Audition, Lightroom, Photoshop, Illustrator, InDesign are used.</h4></br>
 			</div>
 		</div>
 
@@ -99,7 +130,7 @@
 			<div class="row">
 				<div class="col-md-7 text-center" style="display:block; padding: 5% 0%;">
 					<h1>About Me</h1></br>
-					<h2>I love automation. </br>I love spending time to create things and to fix small details. </br>I like working as a team because it fosters Creativity. </br>Solving problems together can make us learn faster and understand more.</h2></br>
+					<h2>I love Robotics & Automation. </br>I love spending time to create things and to fix small details. </br>I like working as a team because it fosters Creativity. </br>Solving problems together can make us learn faster and understand more.</h2></br>
 				</div>
 				<div class="col-md-5 text-center" id="workImg">
 					<img src="image\work.jpg" height="429.5" width="336.5" style="float:center;"></img>

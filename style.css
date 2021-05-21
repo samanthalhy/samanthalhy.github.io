@@ -3,7 +3,7 @@ body, html {
 }
 
 body{
-	background-image: url(image/intro.jpg);
+	
     width: 100%;
     height: 100%
 	background-position: center;
@@ -12,7 +12,33 @@ body{
 	z-index:-1;
 }
 
-
+#bgImage{
+	background-image: url(image/intro.jpg);
+	width: 100%;
+    height: 100%
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index:-1;
+}
+#bgImageAch{
+	background-image: url(image/bg5.jpg);
+    width: 100%;
+    height: 100%
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index:-1;
+}
+#bgImageRes{
+	background-image: url(image/bg2.jpg);
+    width: 100%;
+    height: 100%
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index:-1;
+}
 h1{
 	white-space: pre-wrap;
 	margin-top: 0;
@@ -36,7 +62,8 @@ h1{
 h2{
  	white-space: pre-wrap;
 	margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 100;
+    font-family: 'Proxima Nova Light';
     font-style: normal;
     font-size: 40px;
     letter-spacing: -.01em;
@@ -47,7 +74,15 @@ h2{
     margin-right: 0%;
     margin-left: 0%;
 }
+h4{
+ 	white-space: pre-wrap;
+	margin-bottom: 0;
+    font-weight: 100;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    
 
+}
 body, h1, h2, h3, p {
     -webkit-font-smoothing: antialiased !important;
 }
@@ -320,6 +355,41 @@ color: #fff;
     text-align: -webkit-match-parent;
 }
 
+#prize {
+	text-align: center;
+	border: 3px #ffffff solid;
+
+}
+
+#prize h3{
+	font-family: Rockwell;
+}
+
+#prj-tunnel{
+	padding: 4%;
+	margin: 1%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px #1a1a1a solid;
+    border-radius: 25px;
+	background-color: #f4c517;
+	background-image: url(image/tunnelRobot.jpg);
+	width: full;
+    height: full;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 500px rgba(102, 102, 153,0.4);
+	text-align: justify;
+
+}
+#prj-tunnel:hover{
+	box-shadow: inset 0 0 0 500px rgba(102, 102, 153,1);
+	
+}
+
+
 #prj0{
 	padding: 4%;
 	margin: 1%;
@@ -327,24 +397,96 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	
-	background-color: #f4c517;
-	background-image: none;
-	background-color: rgba(244,197,23,1);
-
-}
-#prj0:hover{
-
+    border-radius: 25px;
 	background-image: url(image/rescueCar.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(244,197,23,0.4);
+	text-align: justify;
+
+}
+#prj0:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(244,197,23,1);
 	
 }
 
+#prj-coins{
+	padding: 4%;
+	margin: 1%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px #1a1a1a solid;
+    border-radius: 25px;
+	background-image: url(image/coins.jpg);
+	width: full;
+    height: full;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 500px rgba(255, 102, 255,0.4);
+	text-align: justify;v
+
+}
+#prj-coins:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(255, 102, 255,1);
+	
+}
+#prj-luci{
+	padding: 4%;
+	margin: 1%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px #1a1a1a solid;
+    border-radius: 25px;
+	background-image: url(image/luci.jpg);
+	width: full;
+    height: full;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 500px rgba(102, 204, 255,0.5);
+	text-align: justify;v
+
+}
+#prj-luci:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(102, 204, 255,1);
+	
+}
+#prj-netServer{
+	padding: 4%;
+	margin: 1%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px #1a1a1a solid;
+    border-radius: 25px;
+	background-image: url(image/netServer.jpg);
+	width: full;
+    height: full;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 500px rgba(255, 153, 51,0.3);
+	text-align: justify;v
+
+}
+#prj-netServer:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(255, 153, 51,1);
+	
+}
 #prj1{
 	padding: 4%;
 	margin: 1%;
@@ -352,19 +494,22 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #a7c712;
-
-}
-
-#prj1:hover{
-
+	border-radius: 25px;
 	background-image: url(image/forum1.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(167, 199, 18, 0.4);
+	text-align: justify;
+
+}
+
+#prj1:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(167, 199, 18, 1);
 	
 }
 
@@ -375,19 +520,21 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #d4445b;
-
-}
-
-#prj2:hover{
-
+	border-radius: 25px;
 	background-image: url(image/attendance.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(212, 68, 91,0.4);
+	text-align: justify;
+
+}
+
+#prj2:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(212, 68, 91,1);
 	
 }
 
@@ -398,19 +545,22 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #75becc;
-
-}
-
-#prj3:hover{
-
+	border-radius: 25px;
 	background-image: url(image/obstacleCar.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(117, 190, 204,0.4);
+	text-align: justify;
+
+}
+
+#prj3:hover{
+
+
+	box-shadow: inset 0 0 0 500px rgba(117, 190, 204,1);
 	
 }
 
@@ -421,19 +571,21 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #846aac;
-
-}
-
-#prj4:hover{
-
+	border-radius: 25px;
 	background-image: url(image/3dhand.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(132, 106, 172,0.4);
+	text-align: justify;
+
+}
+
+#prj4:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(132, 106, 172,1);
 	
 }
 
@@ -444,18 +596,20 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #52966E;
-}
-
-#prj5:hover{
-
+	border-radius: 25px;
 	background-image: url(image/smartCity.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(82, 150, 110,0.5);
+	text-align: justify;
+}
+
+#prj5:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(82, 150, 110,1);
 	
 }
 
@@ -466,18 +620,20 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #DFA5E4;
-}
-
-#prj6:hover{
-
+	border-radius: 25px;
 	background-image: url(image/appDesign.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(223, 165, 228,0.5);
+	text-align: justify;
+}
+
+#prj6:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(223, 165, 228,1);
 	
 }
 
@@ -488,19 +644,21 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #234b95;
-}
-
-
-#prj7:hover{
-
+	border-radius: 25px;
 	background-image: url(image/games.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(35, 75, 149,0.5);
+	text-align: justify;
+}
+
+
+#prj7:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(35, 75, 149,1);
 	
 }
 
@@ -511,18 +669,20 @@ color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	border: 10px #1a1a1a solid;
-	background-color: #839ab0;
-}
-
-#prj8:hover{
-
+	border-radius: 25px;
 	background-image: url(image/media.jpg);
 	width: full;
     height: full;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 0 500px rgba(131, 154, 176,0.5);
+	text-align: justify;
+}
+
+#prj8:hover{
+
+	box-shadow: inset 0 0 0 500px rgba(131, 154, 176,1);
 	
 }
 
@@ -581,6 +741,27 @@ color: #fff;
     font-size: 20px;
 }
 
+#nav{
+	color: #ffffff;
+	padding: .618em 0;
+	vertical-align: middle;
+	transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+
+	
+}
+#nav h4{
+	color: #ffffff;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	line-height: 1em;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------- 
 04 Media queries (using a mobile-first approach) ------------------------------------------------------------
@@ -609,25 +790,8 @@ color: #fff;
 	}
 
 
-	#nav{
-		color: #fff;
-		padding: .618em 0;
-		vertical-align: middle;
-		transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
-
-		
-	}
-
 	#nav h4{
-		font-weight: 300;
-		font-style: normal;
-		font-size: 10px;
-		letter-spacing: .16em;
-		text-transform: uppercase;
-		white-space: nowrap;
-		line-height: 1em;
-		text-align: center;
-		padding-bottom: 20px;
+		font-size: 15px;
 	}
 
 
@@ -691,27 +855,7 @@ color: #fff;
 
 
 
-	#nav{
-		color: #fff;
-		margin: 0 20px;
-		padding: 1em 0;
-		vertical-align: middle;
-		transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
-	}
-
-	#nav h4{
-		font-weight: 300;
-		font-style: normal;
-		font-size: 20px;
-		letter-spacing: .16em;
-		text-transform: uppercase;
-		white-space: nowrap;
-		line-height: 1em;
-		text-align: center;
-		padding-right: 20px;
-
-	}
 
 	#intro{
 		margin-top: 40vh;

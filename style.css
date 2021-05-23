@@ -91,6 +91,54 @@ h1, h2, h3 {
 }
 
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 350ms ease-in;
+}
+
+.fade-in.showUp {
+  opacity: 1;
+}
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 350ms ease-in, -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.showUp,
+.from-right.showUp {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-bottom {
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.from-bottom {
+  transition: opacity 350ms ease-in, -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-bottom.showUp {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .Index-page-content {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

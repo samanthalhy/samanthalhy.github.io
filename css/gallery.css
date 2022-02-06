@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+  text-align: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+/*iframe{
+  height: 200%;
+}*/
+/*.prevDiv{
+  width: 0.5vw;
+  padding: 0;
+}*/
+/* Next & previous buttons */
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  /*top: -40%;*/
+  width: auto;
+  padding: 15vh 2vw 15vh 2vw;
+  margin-top: -30%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev:hover,.next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 5%;
+	border-radius: 3px 0 0 3px;
+  /*margin-left: 80%;*/
+  /*top: 0%;*/
+  /*margin-top: -20%;*/
+}
+
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* thumnbail columns side by side */
+.column {
+	float: left;
+	width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.thumnbailImg {
+	opacity: 0.6;
+}
+
+.active, .thumnbailImg:hover {
+	opacity: 1;
+}
+
+@media screen and (orientation: portrait) {
+  .prev, .next{
+    display: none;
+  }
+  iframe{
+    width: 100%;
+    height: auto;
+  }
+
+}

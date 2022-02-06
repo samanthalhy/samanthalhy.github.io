@@ -40,7 +40,7 @@ body{
 h1{
 	white-space: pre-wrap;
 	margin-top: 0;
-	margin-bottom: 40px !important;
+	margin-bottom: 40px;
 	color: #fff;
 	font-family: Playfair Display;
 	font-style: normal;
@@ -673,7 +673,9 @@ a {
 	#intro h1{
 		font-size: 3.5em;
 		margin-top: 25vh;
+		margin-bottom: 1vh;
 	}
+
 
 	#about h1{
 		font-size: 50px;

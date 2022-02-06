@@ -666,13 +666,13 @@ a {
 	}
 	#intro{
 		margin-top: 3vh;
-		height: 100vh;
+		height: 100%;
 		margin-left: 0.5vw;
 	}
 
 	#intro h1{
 		font-size: 3.5em;
-		margin-top: 30vh;
+		margin-top: 25vh;
 	}
 
 	#about h1{

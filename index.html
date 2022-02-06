@@ -5,8 +5,8 @@
 	<title>Samantha Lee</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-	<link rel="stylesheet" media="screen" href="style.css">
-
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link rel="stylesheet" media="screen" href="css/gallery.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Samantha Lee">
 	<meta name="description" content="A Mechanical Engineering and Computing student.">
@@ -19,28 +19,30 @@
 </head>
 
 <body>
-<div id='bgImage'>
-<div class="container" id="bg">
-	<div class="row justify-content-center" id="nav">
-		<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
-		<div class="col-md-3"><a href="resume.html"><h4>Resume</h4></a></div>
-		<div class="col-md-4"><a href="achievements.html"><h4>Achievements </h4></a></div>
-		<div class="col-md-2"><a href="#footer"><h4>Contact</h4></a></div>
-	</div><!--end of #nav-->
-	<div class="row" id="intro">
-		<div class="col-lg-12" >
-			<h1>Samantha Lee </br></h1>
-			<h2>A Hybrid of Mechanical Engineering & Computing</h2></br>
-			
-		</div>
-	</div><!--end of #intro-->
-</div> <!--end of .container-->
+<div id='bgImage' class="backgroundImg">
+	<div class="container" id="bg">
+		<div class="row justify-content-center" id="nav">
+			<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
+			<div class="col-md-2"><a href="resume.html"><h4>Resume</h4></a></div>
+			<div class="col-md-3"><a href="achievements.html"><h4>Achievements </h4></a></div>
+			<div class="col-md-2"><a href="research.html"><h4>Research </h4></a></div>
+			<div class="col-md-2"><a href="#footer"><h4>Contact</h4></a></div>
+		</div><!--end of #nav-->
+		<div class="row" id="intro">
+			<div class="col-lg-12" >
+				<h1>Samantha Lee </br></h1>
+				<h2>A Hybrid of Mechanical Engineering & Computing</h2></br>
+				
+			</div>
+		</div><!--end of #intro-->
+	</div> <!--end of .container-->
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 fade-in from-bottom" id="about">
 			<h1>I'm an enthusiastic & detail-oriented Robotics Researcher.</h1></br>
 			<h2>Passionate, Highly Motivated Mechanical & Computing Engineer. Having a Bias for Action, Breaking down and Tackling complex problems efficiently. Interested in automation, robotics and product development from conception to launch.</h2></br>
+			<h2>Research Interests: Multi-Robot Systems, Perceptual Robots, Image Processing, and Automation.</h2></br>
 		</div>
 	</div>
 </div> <!--end of .container-->
@@ -48,13 +50,22 @@
 
 
 
-<div id="education">
+<div id="allProject">
 	<div class="container">
-		<div class="row">
+		<div class="row projRow">
 			<div class="col-md-12 fade-in" >
 				<h2>Projects</h2></br>
-
 			</div>
+			<div class="col-md-7 projects fade-in from-bottom" id="prj-multiRobot">
+				<h3>Capability-Based Distributed Dynamic Task Allocation and Collaboration in Multi-Perceptual Self-Reconfiguring Robots</h3></br>
+				<h4>Developing a decentralized multi-agent system on which all robots can make decisions based on their own status, capabilities, and specialties. Thus, robots are able to self-reconfigure, gather, and assemble required components from other agents into one based on the task requirement.</h4></br>
+				<a href="research.html"><div class="DetailsLink"><h4>Details</h4></div></a>
+			</div>				
+			<div class="col-md-5 projects fade-in from-bottom" id="prj-welding">
+				<h3>A Multi-Sensor Interface to Improve the Teaching and Learning Experience in Arc Welding Training Tasks</h3></br>
+				<h4>Development of a multisensor extended reality platform to improve the teaching and learning experience of arc welding tasks.</h4></br>
+				<a href="research.html"><div class="DetailsLink"><h4>Details</h4></div></a>
+			</div>			
 			<div class="col-md-12 projects fade-in from-bottom" id="prj-tunnel">
 				<h3>Inspection & Cleaning Robot</h3></br>
 				<h4>Creating an autonomous robot that can carry out inspection and cleaning in an unknown place. Deep Learning is used for detecting defects inside a tunnel. To achieve an autonomous navigation control, Simultaneous Localization and Mapping (SLAM) is implemented for controlling the robot movement in a new dark environment.</h4></br>
@@ -62,7 +73,7 @@
 			<div class="col-md-8 projects fade-in from-left" id="prj0">
 				<h3>Rescue Robot Car</h3></br>
 				<h4>Developing a robot with the implementation of Artificial Intelligence that is able to grip and lift an object, climb the stair, walk along the uneven floor, recognize the traffic light signal and open a locked door automatically.</h4></br>
-				<div id="prize"><h2>Rexroth Industry 4.0 Scholarship</h2></div>
+				<div class="prize"><h3>Rexroth Industry 4.0 Scholarship</h3></div>
 			</div>
 			<div class="col-md-4 projects fade-in from-right" id="prj-coins">
 				<h3>Coins Recognition</h3></br>
@@ -76,12 +87,12 @@
 				<h3>Smart City Design</h3></br>
 				<h4>Leading a multi-disciplinary team to illustrate how Hong Kong could be “smarter” with the aid of mini models. Arduino, Raspberry Pi, and different kind of sensors are used to visualize our idea.</h4></br></br>
 
-				<div id="prize"><h2>CHAMPION</h2></div>
+				<div class="prize"><h3>CHAMPION</h3></div>
 			</div>
 			<div class="col-md-6 projects fade-in from-left" id="prj6">
 				<h3>Mobile App Design</h3></br>
 				<h4>Designing and building a mobile application that allows the blind to walk safely with the use of the proximity sensor on mobile phone. Users can choose between the walk-along the wall mode or object detection mode.Further improvement will be using an extra ultrasonic sensor and the NFC technology to guide and give direction to the user when walking through the street.</h4></br>
-				<div id="prize"><h2>FIRST RUNNER UP</h2></div>
+				<div class="prize"><h3>FIRST RUNNER UP</h3></div>
 			</div>
 			<div class="col-md-6 projects fade-in from-right" id="prj-luci">
 				<h3>Movies Discussion Forum</h3></br>
@@ -143,8 +154,9 @@
 		</div>
 		<div class="row justify-content-center" id="nav">
 			<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
-			<div class="col-md-3"><a href="resume.html"><h4>Resume</h4></a></div>
-			<div class="col-md-4"><a href="achievements.html"><h4>Achievements </h4></a></div>
+			<div class="col-md-2"><a href="resume.html"><h4>Resume</h4></a></div>
+			<div class="col-md-3"><a href="achievements.html"><h4>Achievements </h4></a></div>
+			<div class="col-md-2"><a href="research.html"><h4>Research </h4></a></div>
 			<div class="col-md-2"><a href="#footer"><h4>Contact</h4></a></div>
 			<div class="col-md-3"><a href="#nav"></br><h4>Back To Top</h4></a></div>
 		</div><!--end of #nav-->
@@ -162,6 +174,6 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- Animation JavaScript -->
-<script src="animation.js"></script>
+<script src="js/animation.js"></script>
 </body>
 </html>

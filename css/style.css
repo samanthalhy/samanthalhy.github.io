@@ -791,9 +791,18 @@ a {
 @media screen and (min-width:2100px) {
 
 	body 						{ font-size:175%; }
+	#tblSkills ul				{font-size: 0.7em; }
 
 
 }
+/* 2500 and up */	
+@media screen and (min-width:2500px) {
+
+	body 						{ font-size:200%; }
+
+
+}
+
 
 
 

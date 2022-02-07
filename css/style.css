@@ -793,9 +793,4 @@ a {
 }
 
 
-/* 2500 and up */	
-@media screen and (min-width:2500px) {
 
-	body 						{ font-size:200%; }
-
-}

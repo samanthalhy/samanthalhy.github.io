@@ -272,7 +272,7 @@ a {
 	bottom: 0;
 	width: 100% !important;
 	height: auto !important;
-/* 	position: static !important; */
+	position: static !important;
 	left: 0px;
 	top: 0px;
 	border: 0;

@@ -17,27 +17,26 @@
 .cursor {
 	cursor: pointer;
 }
-/*iframe{
-  height: 200%;
-}*/
-/*.prevDiv{
-  width: 0.5vw;
-  padding: 0;
-}*/
+
 /* Next & previous buttons */
 .prev,.next {
   cursor: pointer;
   position: absolute;
-  /*top: -40%;*/
   width: auto;
-  padding: 15vh 2vw 15vh 2vw;
-  margin-top: -30%;
+  padding: 5vh 2vw 5vh 2vw;
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
   color: white;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  z-index: 1;
 }
 .prev:hover,.next:hover {
   background-color: rgba(0,0,0,0.5);
@@ -47,16 +46,7 @@
 .next {
 	right: 5%;
 	border-radius: 3px 0 0 3px;
-  /*margin-left: 80%;*/
-  /*top: 0%;*/
-  /*margin-top: -20%;*/
 }
-
-/*.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}*/
 
 /* thumnbail columns side by side */
 .column {

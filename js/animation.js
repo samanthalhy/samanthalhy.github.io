@@ -1,8 +1,8 @@
 var a;	// true: landscape; false: portrait
 if ($(window).height() > $(window).width()){
-	a = false;
+  a = false;
 }else{
-	a = true;
+  a = true;
 }
 
 const fadeIn_controller = document.querySelectorAll(".fade-in");

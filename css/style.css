@@ -381,7 +381,7 @@ a {
  	color: #979797;
  }
 
- #tblSkills ul{
+#tblSkills ul{
 	display: block;
 	list-style-type: disc;
 	margin-block-start: 0em;
@@ -389,7 +389,9 @@ a {
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	padding-inline-start: 40px;
- }
+	font-size: 1em;
+}
+
 #tblSkills h5{
 	display: block;
 	list-style-type: disc;
@@ -401,7 +403,7 @@ a {
 	word-wrap: break-word;
 	color: #979797;
 	font-style: italic;
- }
+}
 
 
 #tblSkills li {
@@ -789,6 +791,7 @@ a {
 @media screen and (min-width:2100px) {
 
 	body 						{ font-size:175%; }
+
 
 }
 

@@ -447,7 +447,7 @@ a {
 #prj-multiRobot, #prj-welding, #prj-tunnel, 
 #prj0, #prj1, #prj2, #prj3, #prj4, #prj5, #prj6, #prj7, #prj8, 
 #prj-coins, #prj-luci, #prj-netServer{
-	box-shadow: inset 0 0 0 500px rgba(39, 39, 39, 0.5);
+	box-shadow: inset 0 0 0 500px rgba(39, 39, 39, 0.4);
 } 
 .projects:hover{
 	color: #ffffff;

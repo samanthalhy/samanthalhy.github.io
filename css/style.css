@@ -728,7 +728,7 @@ a {
 	#achievements, #experiences{
 		margin-top: 35vh;
 	}
-	.tblResearchTitle{
+	.tblResearchTitle, .tblAchTitle h4, .tblExpTitle h4{
 		font-weight: bold;
 	}
 	.tblSkillTitle{

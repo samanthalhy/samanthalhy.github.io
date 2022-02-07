@@ -311,12 +311,12 @@ a {
 
 
  }
-	#tbl h5{
+#tbl h5{
  	color: #5F5F5F;
  	font-style: italic;
 
  }
-	#tbl h6{
+#tbl h6{
  	color: #979797;
  }
 
@@ -326,7 +326,7 @@ a {
 	width: 100%;
 	float: center;
 	clear: both;
-	padding: 10%;
+	padding: 10% 2% 10% 2%;
 	margin-bottom: 10%;
 }
 #allProject{
@@ -380,10 +380,10 @@ a {
 #tblAch h6, #tblResearch h6{
  	color: #979797;
  }
-.tblSkillTitle{
+.tblSkillTitle, .tblExpDate{
 	width: 40%;
 }
-.tblSkillDetails{
+.tblSkillDetails, .tblExpTitle{
 	width: 60%;
 }
 #tblSkills ul{
@@ -728,13 +728,13 @@ a {
 	#achievements, #experiences{
 		margin-top: 35vh;
 	}
-	.tblResearchTitle, .tblAchTitle h4, .tblExpTitle h4{
+	.tblResearchTitle h4, .tblAchTitle h4, .tblExpTitle h4{
 		font-weight: bold;
 	}
-	.tblSkillTitle{
+	.tblSkillTitle, .tblExpDate{
 		width: 20%;
 	}
-	.tblSkillDetails{
+	.tblSkillDetails, .tblExpTitle{
 		width: 80%;
 	}	
 	#tblSkills ul{

@@ -380,7 +380,12 @@ a {
 #tblAch h6, #tblResearch h6{
  	color: #979797;
  }
-
+.tblSkillTitle{
+	width: 40%;
+}
+.tblSkillDetails{
+	width: 60%;
+}
 #tblSkills ul{
 	display: block;
 	list-style-type: disc;
@@ -723,6 +728,18 @@ a {
 	#achievements, #experiences{
 		margin-top: 35vh;
 	}
+	.tblSkillTitle{
+		width: 20%;
+	}
+	.tblSkillDetails{
+		width: 80%;
+	}	
+	#tblSkills ul{
+		font-size: 0.7em; 
+	}
+	#tblSkills h5{
+		padding-left: 2em; 
+	}	
 
 	#footer h4{
 		font-size: 15px;

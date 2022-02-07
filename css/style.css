@@ -424,7 +424,6 @@ a {
 .prize h3{
 	font-family: Rockwell;
 }
-
 .projects{
 	padding: 4%;
 	margin: 1%;
@@ -439,12 +438,23 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: justify;
-	hyphens: auto
+	hyphens: auto;
+	color: #E1E1E1;
+}
+.projects h3{
+	font-weight: bold;
+}
+#prj-multiRobot, #prj-welding, #prj-tunnel, 
+#prj0, #prj1, #prj2, #prj3, #prj4, #prj5, #prj6, #prj7, #prj8, 
+#prj-coins, #prj-luci, #prj-netServer{
+	box-shadow: inset 0 0 0 500px rgba(39, 39, 39, 0.5);
+} 
+.projects:hover{
+	color: #ffffff;
 }
 #prj-multiRobot{
 	background-color: #f4c517;
 	background-image: url(../image/multiRobot.jpg);
-	box-shadow: inset 0 0 0 500px rgba(102, 102, 153,0.4);
 }
 #prj-multiRobot:hover{
 	box-shadow: inset 0 0 0 500px rgba(102, 102, 153,1);
@@ -452,7 +462,6 @@ a {
 #prj-welding{
 	background-color: #f4c517;
 	background-image: url(../image/vrWelding.jpg);
-	box-shadow: inset 0 0 0 500px rgba(152, 152, 152,0.4);
 }
 #prj-welding:hover{
 	box-shadow: inset 0 0 0 500px rgba(152, 152, 152,1);
@@ -460,15 +469,12 @@ a {
 #prj-tunnel{
 	background-color: #f4c517;
 	background-image: url(../image/tunnelRobot.jpg);
-	box-shadow: inset 0 0 0 500px rgba(255, 87, 51,0.4);
 }
 #prj-tunnel:hover{
 	box-shadow: inset 0 0 0 500px rgba(255, 87, 51,1);
 }
 #prj0{
 	background-image: url(../image/rescueCar.jpg);
-	box-shadow: inset 0 0 0 500px rgba(244,197,23,0.4);
-
 }
 #prj0:hover{
 	box-shadow: inset 0 0 0 500px rgba(244,197,23,1);	
@@ -476,8 +482,6 @@ a {
 
 #prj-coins{
 	background-image: url(../image/coins.jpg);
-	box-shadow: inset 0 0 0 500px rgba(255, 102, 255,0.4);
-
 }
 #prj-coins:hover{
 	box-shadow: inset 0 0 0 500px rgba(255, 102, 255,1);
@@ -485,21 +489,18 @@ a {
 }
 #prj-luci{
 	background-image: url(../image/luci.jpg);
-	box-shadow: inset 0 0 0 500px rgba(102, 204, 255,0.5);
 }
 #prj-luci:hover{
 	box-shadow: inset 0 0 0 500px rgba(102, 204, 255,1);
 }
 #prj-netServer{
 	background-image: url(../image/netServer.jpg);
-	box-shadow: inset 0 0 0 500px rgba(255, 153, 51,0.3);
 }
 #prj-netServer:hover{
 	box-shadow: inset 0 0 0 500px rgba(255, 153, 51,1);
 }
 #prj1{
 	background-image: url(../image/forum1.jpg);
-	box-shadow: inset 0 0 0 500px rgba(167, 199, 18, 0.4);
 }
 
 #prj1:hover{
@@ -508,7 +509,6 @@ a {
 
 #prj2{
 	background-image: url(../image/attendance.jpg);
-	box-shadow: inset 0 0 0 500px rgba(212, 68, 91,0.4);
 }
 
 #prj2:hover{
@@ -517,7 +517,6 @@ a {
 
 #prj3{
 	background-image: url(../image/obstacleCar.jpg);
-	box-shadow: inset 0 0 0 500px rgba(117, 190, 204,0.4);
 }
 
 #prj3:hover{
@@ -526,16 +525,14 @@ a {
 
 #prj4{
 	background-image: url(../image/3dhand.jpg);
-	box-shadow: inset 0 0 0 500px rgba(132, 106, 172,0.4);
 }
 
 #prj4:hover{
-	box-shadow: inset 0 0 0 500px rgba(132, 106, 172,1);
+	box-shadow: inset 0 0 0 500px rgba(12, 12, 12 ,1);
 }
 
 #prj5{
 	background-image: url(../image/smartCity.jpg);
-	box-shadow: inset 0 0 0 500px rgba(82, 150, 110,0.5);
 }
 
 #prj5:hover{
@@ -544,7 +541,6 @@ a {
 
 #prj6{
 	background-image: url(../image/appDesign.jpg);
-	box-shadow: inset 0 0 0 500px rgba(223, 165, 228,0.5);
 }
 
 #prj6:hover{
@@ -553,19 +549,14 @@ a {
 
 #prj7{
 	background-image: url(../image/games.jpg);
-	box-shadow: inset 0 0 0 500px rgba(35, 75, 149,0.5);
+	box-shadow: inset 0 0 0 500px rgba(39, 39, 39, 0.8);
 }
-
-
 #prj7:hover{
 	box-shadow: inset 0 0 0 500px rgba(35, 75, 149,1);
 }
-
 #prj8{
 	background-image: url(../image/media.jpg);
-	box-shadow: inset 0 0 0 500px rgba(131, 154, 176,0.5);
 }
-
 #prj8:hover{
 	box-shadow: inset 0 0 0 500px rgba(131, 154, 176,1);
 }
@@ -714,7 +705,7 @@ a {
 		margin-top: 20vh;
 	}
 	.projects{
-		text-align: left;
+		text-align: left;	
 	}
 	.projects h3{
 		font-size: 5.2vw;
@@ -723,6 +714,7 @@ a {
 
 	.projects h4{
 		font-size: 4.7vw;
+		font-weight: 500;
 	}	
 
 	#achievements, #experiences{

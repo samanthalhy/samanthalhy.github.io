@@ -261,12 +261,8 @@ a {
 }
 
 #workImg img{
-	padding: 20% 5%;
-/* 	content: ""; */
-/* 	display: block; */
-/* 	position: absolute; */
+	padding: 25% 5%;
 	z-index: 1;
-/* 	top: 0; */
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -686,6 +682,9 @@ a {
 		font-size: 20px;
 
 	}
+	#workImg img{
+		margin-top: 1vh;
+	}	
 	#tbl h3, #tblAch h3, #tblEdu h3, #tblSkills h3, #tblResearch h3{
 		font-size: 70%;
 	}

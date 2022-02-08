@@ -262,9 +262,9 @@ a {
 
 #workImg img{
 	padding: 20% 5%;
-	content: "";
+/* 	content: ""; */
 /* 	display: block; */
-	position: absolute;
+/* 	position: absolute; */
 	z-index: 1;
 /* 	top: 0; */
 	left: 0;

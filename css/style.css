@@ -29,13 +29,13 @@ body{
 	background-position: 60%;
 }
 #bgImageRes{
-	background-image: url(../image/bgPresent1.jpg);
-	background-position: 72%;
+	background-image: url(../image/bgPresent2.jpg);
+	background-position: 52%;
 }
 #bgImagePrj{
-	background-image: url(../image/bgPresent0.jpg);
+	background-image: url(../image/bgPresent2.jpg);
 	background-repeat: no-repeat;
-	background-position: 75%;
+	background-position: 52%;
 }
 h1{
 	white-space: pre-wrap;
@@ -229,8 +229,8 @@ a {
 #aboutMe{
 	color: #121212;
 	width: 100%;
-	float: center;
-	clear: both;
+	/*float: center;*/
+	/*clear: both;*/
 	margin-bottom: 10%;
 }
 
@@ -242,9 +242,9 @@ a {
 	letter-spacing: .01em;
 	line-height: 1.1em;
 	text-transform: none;
-	display: block;
+	/*display: block;*/
 	font-weight: bold;
-	text-align: center;
+	/*text-align: center;*/
 	color: #121212;
 }
 #aboutMe h2{
@@ -255,13 +255,18 @@ a {
 	letter-spacing: -.01em;
 	line-height: 1.5em;
 	text-transform: none;
-	text-align: center;
-	display: block;
-	padding: 0% 20% 10% 20%;
+	text-align: left;
+	/*display: block;*/
+	/*padding: 0% 20% 10% 20%;*/
+}
+
+#aboutMe p{
+	text-align: justify;
+	padding-right: 5%;
 }
 
 #workImg img{
-	padding: 25% 5%;
+	/*padding: 25% 5%;*/
 	z-index: 1;
 	left: 0;
 	right: 0;
@@ -270,6 +275,10 @@ a {
 	height: auto !important;
 	position: static !important;
 	border: 0;
+}
+
+.multi-img{
+	padding: 0;
 }
 
 #experiences h2{
@@ -363,7 +372,7 @@ a {
 }
 #tblAch td, #tblResearch td{
 	width: auto;
-	padding: 1.5em;
+	/*padding: 1.5em;*/
  }
 
 #tblAch h5, #tblResearch h5{
@@ -410,6 +419,10 @@ a {
 	text-align: -webkit-match-parent;
 }
 
+.sideBySide-media{
+	padding: 0;
+}
+
 .prize {
 	text-align: center;
 	border: 3px #ffffff solid;
@@ -418,6 +431,11 @@ a {
 .prize h3{
 	font-family: Rockwell;
 }
+
+.tblResearchTitle td{
+	padding-left: 10%;
+}
+
 .projects{
 	padding: 4%;
 	margin: 1%;
@@ -651,6 +669,7 @@ a {
 		z-index:-1;
 	}
 
+
 	#nav h4{
 		font-size: 15px;
 	}
@@ -661,30 +680,40 @@ a {
 	}
 
 	#intro h1{
-		font-size: 3.5em;
-		margin-top: 25vh;
+		font-size: 2.5em;
+		margin-top: 35vh;
 		margin-bottom: 1vh;
 	}
 
 
 	#about h1{
-		font-size: 50px;
+		font-size: 30px;
 		/*margin-top: 20vh;*/
 	}
 
 	#about h2{
-		font-size: 20px;
+		font-size: 18px;
 	}
-
+	#aboutMe h1{
+		font-size: 2.5em;
+		text-align: center;
+	}
 	#aboutMe h2{
 
-		padding: 0% 5% 10% 5%;
+		/*padding: 0% 5% 10% 5%;*/
 		font-size: 20px;
 
+	}
+	#aboutMe p{
+		padding-right: 0;
 	}
 	#workImg img{
 		margin-top: 1vh;
+		padding: 0 8% 15% 8%;
 	}	
+	.sub-title h2{
+		font-size:6vw;
+	}
 	#tbl h3, #tblAch h3, #tblEdu h3, #tblSkills h3, #tblResearch h3{
 		font-size: 70%;
 	}
@@ -696,7 +725,7 @@ a {
 		font-size: 70%;
 	}
 	#tbl h6, #tblAch h6, #tblEdu h6, #tblSkills h6, #tblResearch h6{
-		font-size: 70%;
+		font-size: 60%;
 	}
 	#about{
 		margin-top: 20vh;
@@ -715,7 +744,7 @@ a {
 	}	
 
 	#achievements, #experiences{
-		margin-top: 35vh;
+		margin-top: 5vh;
 	}
 	.tblResearchTitle h4, .tblAchTitle h4, .tblExpTitle h4{
 		font-weight: bold;
@@ -733,6 +762,9 @@ a {
 		padding-left: 2em; 
 	}	
 
+	#footer h2{
+		font-size: 25px;
+	}
 	#footer h4{
 		font-size: 15px;
 	}

@@ -779,7 +779,10 @@ li h6 {font-size:mehNormal;}
 	#footer h4{
 		font-size: 15px;
 	}
-
+	li {
+		font-size:10px;
+	}
+	li h6 {font-size:mehNormal;}
 
 }
 

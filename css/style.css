@@ -251,13 +251,14 @@ a {
 	margin-bottom: 0;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 29px;
-	letter-spacing: -.01em;
+	font-size: 23px;
+	/*letter-spacing: -.01em;*/
 	line-height: 1.5em;
 	text-transform: none;
 	text-align: left;
 	/*display: block;*/
-	/*padding: 0% 20% 10% 20%;*/
+	/*padding: 0% 5% 0% 5%;*/
+	padding-right: 18%;
 }
 
 #aboutMe p{
@@ -713,6 +714,7 @@ li h6 {font-size:mehNormal;}
 
 		/*padding: 0% 5% 10% 5%;*/
 		font-size: 20px;
+		padding-right: 0%;
 
 	}
 	#aboutMe p{

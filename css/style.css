@@ -391,6 +391,12 @@ a {
 #tblAch h6, #tblResearch h6{
  	color: #979797;
  }
+
+#tblResearch h6, #tblResearch h6 ol li{
+	font-size: 16px;
+}
+
+
 .tblSkillTitle, .tblExpDate{
 	width: 40%;
 }

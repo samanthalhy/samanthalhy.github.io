@@ -31,7 +31,11 @@
 <body>
 <div id='bgImage' class="backgroundImg">
 	<div class="container" id="bg">
-		<div class="row justify-content-center" id="nav">
+		<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+			<span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+			<span class="sr-only">Toggle navigation</span>
+		</button>
+		<div class="row justify-content-center site-nav" id="site-nav">
 			<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
 			<div class="col-md-2"><a href="research.html"><h4>Research </h4></a></div>
 			<div class="col-md-3"><a href="achievements.html"><h4>Achievements </h4></a></div>
@@ -52,9 +56,9 @@
 		<div class="col-md-12 fade-in from-bottom" id="about">
 			<h1>I'm an enthusiastic & detail-oriented Robotics Researcher.</h1></br>
 			<h2>Passionate, Highly Motivated Mechanical & Computing Engineer.</br>Having a Bias for Action, Breaking down and Tackling complex problems efficiently.</h2></br>
-			<h2>Research Interests: Particles Manipulation, VLA, Multi-Robot Systems, and Automation.</h2></br>
-			<h2>Current Side Project: Can we upgrade the Contemporary Art?</h2>
-			<h2>(Art Upgrading Project with M+ Museum)</h2></br>
+			<h2>Research Interests: Embodied AI, Manipulation, Multi-Robot Systems, and Automation.</h2></br>
+			<h2>Current Role: Postdoctoral Fellow and Lab Manager</h2>
+			<h2>Concurrent Role: Graphic Designer for Principal Investigator</h2>
 		</div>
 	</div>
 </div> <!--end of .container-->
@@ -217,11 +221,14 @@
 <footer id="footer">
 	<div class="container">
 		<h2>Contact</h2>
-		<div class="row justify-content-center">
-			<div class="col-md-1" id="linkedin"></div>
-			<div class="col-md-6 text-center">
-				<a href="https://www.linkedin.com/in/samantha-leehy" target="_blank"><h4>https://www.linkedin.com/in/samantha-leehy</h4></span></a>
-			</div>
+		<div class="row justify-content-center align-items-center">
+		    <div class="col-auto">
+		        <div id="linkedin"></div>
+		    </div>
+
+		    <div class="col-auto">
+		        <a href="https://www.linkedin.com/in/samantha-leehy" target="_blank"><h4>https://www.linkedin.com/in/samantha-leehy</h4></span></a>
+		    </div>
 		</div>
 		<div class="row justify-content-center" id="nav">
 			<div class="col-md-2"><a href="index.html"><h4>Home</h4></a></div>
@@ -229,7 +236,7 @@
 			<div class="col-md-3"><a href="achievements.html"><h4>Achievements </h4></a></div>
 			<div class="col-md-2"><a href="resume.html"><h4>Resume</h4></a></div>
 			<div class="col-md-2"><a href="#footer"><h4>Contact</h4></a></div>
-			<div class="col-md-3"><a href="#nav"></br><h4>Back To Top</h4></a></div>
+			<div class="col-md-3"><a href="#bg"></br><h4>Back To Top</h4></a></div>
 		</div><!--end of #nav-->
 	</div>
 
@@ -246,5 +253,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- Animation JavaScript -->
 <script src="js/animation.js"></script>
+<script src="js/navigation.js"></script>
 </body>
 </html>

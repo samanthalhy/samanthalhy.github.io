@@ -1,11 +1,12 @@
 body, html {
 	height: 100%;
+	margin: 0;
 }
 
 body{
 	overflow-x: hidden;
  	width: 100%;
- 	height: 100%
+	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -392,8 +393,11 @@ a {
  	color: #979797;
  }
 
-#tblResearch h6, #tblResearch h6 ol li{
-	font-size: 16px;
+
+#tblResearch iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
 }
 
 
@@ -403,7 +407,7 @@ a {
 .tblSkillDetails, .tblExpTitle{
 	width: 60%;
 }
-#tblSkills ul{
+#tblSkills ul, #tblResume ul{
 	display: block;
 	list-style-type: disc;
 	margin-block-start: 0em;
@@ -415,7 +419,7 @@ a {
 }
 
 
-#tblSkills h5{
+#tblSkills h5, #tblResume h5{
 	display: block;
 	list-style-type: disc;
 	margin-block-start: 0.2em;
@@ -426,11 +430,18 @@ a {
 	word-wrap: break-word;
 	color: #979797;
 	font-style: italic;
+}
+
+#tblSkills h5{
 	font-size: 0.8em;
 }
 
+#tblResume h5{
+	font-size: 0.65em;
+}
 
-#tblSkills li {
+
+#tblSkills li , #tblResume li{
 	display: list-item;
 	text-align: -webkit-match-parent;
 }
@@ -451,6 +462,7 @@ a {
 .tblResearchTitle td{
 	padding-left: 10%;
 }
+
 
 .projects{
 	padding: 4%;
@@ -623,28 +635,24 @@ a {
 
 
 #linkedin {
-	background: url(../image/linkedin.png) no-repeat;
-	height: 50px;
-	width: 50px;
-	padding: 0;
-	margin: 0;
-	margin-top: 1.5em;
+    background: url(../image/linkedin.png) no-repeat center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0;
 }
 
-#footer h4{
- 	white-space: pre-wrap;
-	color: #fff;
-	font-style: normal;
-	text-transform: none;
-	display: block;
-	text-align: center;
-	margin-top: -2.5%;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 20px;
+#footer h4 {
+    white-space: nowrap;
+    color: #fff;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
 }
 
-#nav{
+#nav,
+.site-nav{
 	color: #ffffff;
 	padding: .618em 0;
 	vertical-align: middle;
@@ -652,7 +660,17 @@ a {
 
 	
 }
-#nav h4{
+
+.nav-toggle {
+	display: none;
+}
+
+.site-nav {
+	position: relative;
+}
+
+#nav h4,
+.site-nav h4{
 	color: #ffffff;
 	font-weight: 300;
 	font-style: normal;
@@ -689,6 +707,10 @@ li h6 {font-size:mehNormal;}
 		height: 100%;
 		z-index:-1;
 	}
+
+	#bg{
+		margin-top: -28px;
+	}		
 
 
 	#nav h4{
@@ -736,17 +758,31 @@ li h6 {font-size:mehNormal;}
 	.sub-title h2{
 		font-size:6vw;
 	}
-	#tbl h3, #tblAch h3, #tblEdu h3, #tblSkills h3, #tblResearch h3{
+	#tbl h3, #tblAch h3, #tblEdu h3, #tblSkills h3, #tblResume h3, #tblResearch h3{
 		font-size: 70%;
 	}
 
-	#tbl h4, #tblAch h4, #tblEdu h4, #tblSkills h4, #tblResearch h4{
+	#tbl h4, #tblAch h4, #tblEdu h4, #tblSkills h4, #tblResume h4, #tblResearch h4{
 		font-size: 70%;
 	}
-	#tbl h5, #tblAch h5, #tblEdu h5, #tblSkills h5, #tblResearch h5{
+	#tbl h5, #tblAch h5, #tblEdu h5, #tblSkills h5, #tblResume h5, #tblResearch h5{
 		font-size: 70%;
 	}
-	#tbl h6, #tblAch h6, #tblEdu h6, #tblSkills h6, #tblResearch h6{
+	#tbl h6, #tblAch h6, #tblEdu h6, #tblSkills h6, #tblResume h6, #tblResearch h6{
+		font-size: 60%;
+	}
+
+	#tblResume li h6{
+		margin-bottom: 0;
+		font-size: 0.75em;
+	}
+
+	#tblResume p, #tblResume h6{
+		margin-bottom: 0;
+		font-size: 0.5em;
+	}	
+
+	#tblResearchTitle h6 ol li{
 		font-size: 60%;
 	}
 	#about{
@@ -777,10 +813,10 @@ li h6 {font-size:mehNormal;}
 	.tblSkillDetails, .tblExpTitle{
 		width: 80%;
 	}	
-	#tblSkills ul{
+	#tblSkills ul, #tblResume ul{
 		font-size: 0.7em; 
 	}
-	#tblSkills h5{
+	#tblSkills h5, #tblResume h5{
 		padding-left: 2em; 
 	}	
 
@@ -805,11 +841,102 @@ li h6 {font-size:mehNormal;}
 	#achievements, #experiences, #about{
 		margin-top: 20vh;
 	}
+	#bg{
+		margin-top: -40vh;
+	}		
+}
+
+/* 700 and up */	
+@media screen and (min-width:900px) {
+	#bg{
+		margin-top: 0vh;
+	}		
 }
 
 
+@media screen and (max-width: 900px) {
+	.nav-toggle {
+		align-items: center;
+		background: rgba(20, 20, 20, .8);
+		border: 1px solid rgba(255, 255, 255, .65);
+		border-radius: 4px;
+		color: #fff;
+		display: flex;
+		height: 40px;
+		justify-content: center;
+		position: fixed;
+		right: 14px;
+		top: 14px;
+		width: 40px;
+		z-index: 1100;
+	}
 
+	.nav-toggle:focus-visible {
+		outline: 3px solid #fff;
+		outline-offset: 3px;
+	}
 
+	.nav-toggle-icon,
+	.nav-toggle-icon span {
+		display: block;
+	}
+
+	.nav-toggle-icon {
+		width: 20px;
+	}
+
+	.nav-toggle-icon span {
+		background: #fff;
+		height: 2px;
+		margin: 5px 0;
+		transition: transform 170ms ease, opacity 170ms ease;
+		width: 20px;
+	}
+
+	.nav-toggle.is-open .nav-toggle-icon span:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+
+	.nav-toggle.is-open .nav-toggle-icon span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-toggle.is-open .nav-toggle-icon span:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+
+	.site-nav {
+		background: rgba(15, 15, 15, .97);
+		box-shadow: -8px 0 24px rgba(0, 0, 0, .3);
+		display: block;
+		margin: 0;
+		min-height: 100vh;
+		padding: 82px 28px 24px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transform: translateX(100%);
+		transition: transform 220ms ease;
+		width: 78vw;
+		z-index: 1050;
+	}
+
+	.site-nav.is-open {
+		transform: translateX(0);
+	}
+
+	.site-nav > div {
+		max-width: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.site-nav h4 {
+		font-size: 15px;
+		padding: 16px 0;
+		text-align: left;
+	}
+}
 
 /* 650 and up */	
 @media screen and (min-width:650px) {
@@ -857,7 +984,7 @@ li h6 {font-size:mehNormal;}
 @media screen and (min-width:2100px) {
 
 	body 						{ font-size:175%; }
-	#tblSkills ul				{font-size: 0.7em; }
+	#tblSkills ul, #tblResume ul	{font-size: 0.7em; }
 
 
 }

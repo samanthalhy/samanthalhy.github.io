@@ -128,7 +128,7 @@ h1, h2, h3 {
 }
 
 .from-bottom {
-	transition: opacity 350ms ease-in, -webkit-transform 400ms ease-in;
+	transition: opacity 350ms ease-in, -webkit-transform 300ms ease-in;
 	opacity: 0;
 }
 
@@ -351,7 +351,6 @@ a {
 	margin-bottom: 10%;
 }
  #tblEdu td{
- 	width: auto;
  	color: #fff;
  	padding: 1.5em;
  }
@@ -444,6 +443,7 @@ a {
 #tblSkills li , #tblResume li{
 	display: list-item;
 	text-align: -webkit-match-parent;
+	color: var(--muted);	
 }
 
 .sideBySide-media{
@@ -687,7 +687,7 @@ li {
 	font-size:20px;
 	color: #979797;
 }
-li h6 {font-size:mehNormal;}
+li h6 {font-size: inherit;}
 
 /* ---------------------------------------------------------------------------------------------------------- 
 04 Media queries (using a mobile-first approach) ------------------------------------------------------------
@@ -829,7 +829,7 @@ li h6 {font-size:mehNormal;}
 	li {
 		font-size:10px;
 	}
-	li h6 {font-size:mehNormal;}
+	li h6 {font-size: inherit;}
 
 }
 
@@ -913,11 +913,12 @@ li h6 {font-size:mehNormal;}
 		min-height: 100vh;
 		padding: 82px 28px 24px;
 		position: fixed;
+		left: 0;
 		right: 0;
 		top: 0;
 		transform: translateX(100%);
 		transition: transform 220ms ease;
-		width: 78vw;
+		width: 100vw;
 		z-index: 1050;
 	}
 
@@ -994,6 +995,808 @@ li h6 {font-size:mehNormal;}
 	body 						{ font-size:200%; }
 
 
+}
+
+/* ==========================================================================
+   Content-page design system
+   Use one predictable type scale and spacing system for all pages.
+   ========================================================================== */
+:root {
+	--ink: #202124;
+	--muted: #6d7075;
+	--line: #e5e7eb;
+	--accent: #1769aa;
+	--paper: #ffffff;
+	--soft-paper: #f7f8fa;
+	--serif: "Playfair Display", Georgia, "Times New Roman", serif;
+	--proxima: "Proxima Nova";
+	--proxima-light: "Proxima Nova Light", "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body.content-page {
+	background: var(--paper);
+	color: var(--ink);
+	font-family: var(--proxima-light);
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4,
+.content-page h5,
+.content-page h6,
+.content-page p,
+.content-page ul,
+.content-page ol {
+	margin-top: 0;
+}
+
+.content-page h1,
+.content-page h2,
+.content-page h3 {
+	font-family: var(--serif);
+}
+
+.content-page h4,
+.content-page h5,
+.content-page h6 {
+	font-family: var(--proxima);
+}
+
+.content-page .backgroundImg {
+	min-height: 560px;
+	height: 68vh;
+	position: relative;
+	z-index: 0;
+	background-color: #1a1a1a;
+	background-size: cover;
+}
+
+.content-page #bg {
+	position: relative;
+	min-height: 100%;
+	z-index: 0;
+}
+
+.content-page #intro {
+	align-items: flex-start;
+	display: flex;
+	margin: 0;
+	padding-top: 30vh;
+	position: relative;
+	z-index: 1;
+}
+
+.content-page #intro h1 {
+	font-family: var(--serif);
+	font-size: clamp(2.5rem, 6vw, 5.5rem);
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.05;
+	margin: 0 0 .35rem;
+}
+
+.content-page #intro h2 {
+	font-family: var(--serif);
+	font-size: clamp(1.35rem, 2vw, 1.8rem);
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0;
+	margin-top: clamp(1rem, 2vw, 1.8rem);
+}
+
+.content-page #experiences,
+.content-page #skills,
+.content-page #achievements {
+	margin-bottom: 5rem;
+	margin-top: 0;
+	padding-top: 4rem;
+}
+
+.content-page .sub-title h2 {
+	color: var(--ink);
+	font-family: var(--serif);
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.15;
+	margin: 0 0 2rem;
+	padding: 0;
+	text-align: center;
+}
+
+.content-page table {
+	border-collapse: separate;
+	border-spacing: 0;
+	color: var(--ink);
+	font-size: 1rem;
+	margin: 0;
+	width: 100%;
+}
+
+.content-page #tblResume tr,
+.content-page #tblResearch tr {
+	border-bottom: 1px solid var(--line);
+}
+
+.content-page #tblResume td,
+.content-page #tblResearch td {
+	border-bottom: 1px solid var(--line);
+	border-top: 0;
+	padding: 2rem 1.25rem;
+	vertical-align: top;
+}
+
+.content-page #tblResume td:first-child {
+	padding-top: 2.15rem;
+}
+
+.content-page #tblResume td:first-child,
+.content-page #tblResearch td:first-child {
+	padding-left: 0;
+	width: 28% !important;
+}
+
+.content-page #tblResume td:last-child,
+.content-page #tblResearch td:last-child {
+	padding-right: 0;
+	width: 78% !important;
+}
+
+.content-page #tblResume h4,
+.content-page #tblResearch h4 {
+	color: var(--ink);
+	font-size: 1.55rem;
+	font-weight: 700;
+	line-height: 1.35;
+	margin: 0 0 .55rem;
+}
+
+.content-page #tblResume h5,
+.content-page #tblResearch h5 {
+	color: var(--muted);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.45;
+	margin: 0 0 .7rem;
+	padding: 0;
+}
+
+.content-page #tblResume h6,
+.content-page #tblResearch h6,
+.content-page #tblResume p,
+.content-page #tblResearch p {
+	color: var(--muted);
+	font-size: 1.3rem;
+	/*font-weight: 450;*/
+	line-height: 1.65;
+	margin: 0 0 .7rem;
+}
+
+
+.content-page #tblResume ul,
+.content-page #tblResume ol,
+.content-page #tblResearch ul,
+.content-page #tblResearch ol {
+	font-size: 1.3rem;
+	line-height: 1.65;
+	margin: .55rem 0 0;
+	padding-left: 1.35rem;
+}
+
+.content-page #tblResume li,
+.content-page #tblResearch li {
+	color: var(--muted);
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0 0 .35rem;
+}
+
+.content-page #tblResearch ul li,
+.content-page #tblResearch ol li {
+	font-size: 1.3rem;
+	line-height: 1.65;
+}
+
+.content-page #tblResume li h6,
+.content-page #tblResearch li h6 {
+	display: inline;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.content-page #tblResearch iframe {
+	display: block;
+	margin-top: 1.25rem;
+	width: 100%;
+}
+
+.content-page #education {
+	background: #202124;
+	margin: 0 0 5rem;
+	padding: 5rem max(1.25rem, 6vw);
+}
+
+.content-page #education .sub-title h2,
+.content-page #education table,
+.content-page #education h4,
+.content-page #education h5,
+.content-page #education h6 {
+	color: #fff;
+}
+
+.content-page #education h5,
+.content-page #education h6 {
+	font-style: normal;
+}
+
+.content-page #tblEdu td {
+	border-top: 1px solid rgba(255, 255, 255, .18);
+	padding: 1.5rem 1rem;
+	vertical-align: top;
+}
+
+.content-page #tblEdu h4 {
+	font-size: 1.55rem;
+	font-weight: 700;
+	line-height: 1.35;
+	margin: 0 0 .45rem;
+}
+
+.content-page #tblEdu h5,
+.content-page #tblEdu h6 {
+	line-height: 1.6;
+	margin: 0 0 .45rem;
+}
+
+.content-page #tblEdu h5,
+.content-page #tblSkills h5 {
+	font-size: 1.5rem;
+}
+
+.content-page #tblEdu h6 {
+	font-size: 1.3rem;
+}
+
+.content-page #tblSkills {
+	margin-bottom: 5rem;
+}
+
+.content-page #tblSkills td {
+	border-top: 1px solid var(--line);
+	padding: 1.5rem 1rem;
+	vertical-align: top;
+}
+
+.content-page #tblSkills h3 {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.content-page #tblSkills ul {
+	font-size: 1.3rem;
+	line-height: 1.6;
+	margin: 0;
+	padding-left: 1.25rem;
+}
+
+.content-page #tblSkills ul ul,
+.content-page #tblSkills ul ul li {
+	font-size: 1.3rem;
+	line-height: 1.6;
+}
+
+.content-page #tblSkills h5 {
+	color: var(--muted);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0 0 .45rem;
+	padding: 0;
+}
+
+
+
+.content-page #tblSkills li + span {
+	display: block;
+	margin-left: 1.25rem;
+}
+
+.content-page #footer,
+.content-page #footer h2 {
+	background-color: #1a1a1a;
+	color: #fff;
+	font-family: 'Playfair Display';
+	text-align: center;
+}
+
+
+.content-page #footer h4 {
+	color: #fff;
+	font-family: 'Proxima Nova';
+
+
+}
+
+
+@media screen and (min-width: 901px) {
+	.content-page #sideProj #tblResearch td:first-child {
+		width: 35% !important;
+	}
+
+	.content-page #sideProj #tblResearch td:last-child {
+		width: 65% !important;
+	}
+}
+
+
+
+.content-page a {
+	transition: color 160ms ease, opacity 160ms ease;
+}
+
+.content-page a:hover,
+.content-page a:focus {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+.content-page .link {
+	color: var(--accent);
+}
+
+.content-page .site-nav h4,
+.content-page #nav h4 {
+	font-family: 'Proxima Nova';
+}
+
+@media screen and (min-width: 901px) {
+	.content-page .site-nav {
+		margin-top: 0;
+		transform: translateY(1rem);
+	}
+}
+
+.content-page #tblAch {
+	border-collapse: separate;
+	border-spacing: 0;
+	color: var(--ink);
+	font-size: 1rem;
+	margin: 0 0 5rem;
+	text-align: left;
+	width: 100%;
+}
+
+.content-page #tblAch td {
+	border-bottom: 1px solid var(--line);
+	border-top: 0;
+	padding: 1rem 1.25rem;
+	vertical-align: top;
+}
+
+.content-page #tblAch td:first-child {
+	padding-left: 1rem;
+	width: 28% !important;
+	text-align: center;
+}
+
+.content-page #tblAch td:last-child {
+	padding: 0;
+	width: 72% !important;
+	padding-bottom: 1rem;
+}
+
+.content-page #tblAch h4 {
+	color: var(--ink);
+	font-size: 1.55rem;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 1rem 0 .2rem;
+}
+
+.content-page #tblAch h5 {
+	color: var(--muted);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0 0 .2rem;
+	padding: 0;
+}
+
+.content-page #tblAch h6 {
+	color: var(--muted);
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+	body.content-page {
+		font-size: 15px;
+	}
+
+	.content-page .backgroundImg {
+		height: 480px;
+		min-height: 0;
+		position: relative;
+		z-index: 2000;
+	}
+
+	.content-page #intro {
+		padding-top: 230px;
+	}
+
+
+
+	.content-page #experiences,
+	.content-page #skills,
+	.content-page #achievements {
+		margin-bottom: 3rem;
+		padding-top: 2.5rem;
+	}
+
+	.content-page #tblResume h4,
+	.content-page #tblResearch h4,
+	.content-page #tblEdu h4,
+	.content-page #tblAch h4 {
+		font-size: 1.1rem;
+	}
+	.content-page #tblAch h4 {
+		margin: 0rem 0 0rem;
+	}
+	.content-page #tblAch td:first-child {
+		text-align: left;
+	}
+
+
+	.content-page #tblResume h5,
+	.content-page #tblResearch h5,
+	.content-page #tblEdu h5,
+	.content-page #tblSkills h5,
+	.content-page #tblAch h5 {
+		font-size: .95rem;
+	}
+
+	.content-page #tblResume h6,
+	.content-page #tblResume li h6,
+	.content-page #tblResearch h6,
+	.content-page #tblEdu h6,
+	.content-page #tblAch h6 {
+		font-size: .85rem;
+	}
+
+	.content-page #tblResume p {
+		font-size: .85rem;
+		line-height: 1.45;
+	}
+
+	.content-page #tblResume,
+	.content-page #tblResearch,
+	.content-page #tblAch,
+	.content-page #tblEdu {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: calc(100% - 2rem);
+	}
+
+	.content-page #tblResume ul,
+	.content-page #tblResume ol,
+	.content-page #tblResearch ul,
+	.content-page #tblResearch ol,
+	.content-page #tblResearch ul li,
+	.content-page #tblResearch ol li,
+	.content-page #tblSkills ul,
+	.content-page #tblSkills ul li,
+	.content-page #tblSkills ul ul,
+	.content-page #tblSkills ul ul li {
+		font-size: .85rem;
+		line-height: 1.45;
+	}
+
+	.content-page #tblResume ul,
+	.content-page #tblResume ol,
+	.content-page #tblResearch ul,
+	.content-page #tblResearch ol,
+	.content-page #tblSkills ul {
+		margin-top: .35rem;
+		margin-bottom: .35rem;
+	}
+
+	.content-page #tblAch {
+		display: block;
+		overflow-x: hidden;
+	}
+
+	.content-page #tblAch tbody,
+	.content-page #tblAch tr {
+		display: block;
+		width: 100%;
+	}
+
+	.content-page #tblAch td,
+	.content-page #tblAch td:first-child,
+	.content-page #tblAch td:last-child {
+		display: block;
+		padding: .75rem 0;
+		width: 100% !important;
+	}
+
+	.content-page #tblAch td:first-child {
+		border-bottom: 0;
+		padding-top: .55rem;
+		padding-bottom: 0;
+	}
+
+	.content-page #tblAch td:last-child {
+		padding-top: .25rem;
+		padding-bottom: .55rem;
+	}
+
+	.content-page #tblAch tr + tr td:first-child {
+		padding-top: .55rem;
+	}
+
+	.content-page #tblAch h4,
+	.content-page #tblAch h5,
+	.content-page #tblAch h6 {
+		margin-bottom: .1rem;
+	}
+
+	.content-page #tblAch h4 {
+		line-height: 1.25;
+	}
+
+	.content-page #tblAch h5,
+	.content-page #tblAch h6 {
+		line-height: 1.35;
+	}
+
+	.content-page #tblResume,
+	.content-page #tblResearch {
+		display: block;
+		overflow-x: hidden;
+	}
+
+	.content-page #tblResume tbody,
+	.content-page #tblResearch tbody,
+	.content-page #tblResume tr,
+	.content-page #tblResearch tr {
+		display: block;
+		width: 100%;
+	}
+
+	.content-page #tblResume td,
+	.content-page #tblResearch td,
+	.content-page #tblResume td:first-child,
+	.content-page #tblResearch td:first-child,
+	.content-page #tblResume td:last-child,
+	.content-page #tblResearch td:last-child {
+		display: block;
+		padding: .75rem 0;
+		width: 100% !important;
+	}
+
+	.content-page #tblResume td:first-child {
+		padding-top: .75rem;
+	}
+
+	.content-page #tblResume td:first-child,
+	.content-page #tblResearch td:first-child {
+		padding-bottom: 0;
+	}
+
+	.content-page #tblResume td:last-child,
+	.content-page #tblResearch td:last-child {
+		padding-top: .25rem;
+	}
+
+	.content-page #tblResume td:first-child,
+	.content-page #tblResearch td:first-child {
+		border-bottom: 0;
+	}
+
+	.content-page #tblResume td:last-child,
+	.content-page #tblResearch td:last-child {
+		border-bottom: 1px solid var(--line);
+	}
+
+	.content-page #tblEdu,
+	.content-page #tblEdu tbody,
+	.content-page #tblEdu tr {
+		display: block;
+		width: 100%;
+	}
+
+	.content-page #tblEdu td {
+		display: block;
+		border-top: 0;
+		text-align: left;
+		width: 100% !important;
+	}
+
+	.content-page #tblEdu td:first-child {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.content-page #tblEdu td:last-child {
+		border-bottom: 1px solid rgba(255, 255, 255, .18);
+	}
+
+	.content-page #tblResearch img[src*="mplus"] {
+		height: auto;
+		max-width: 100%;
+		width: 140px !important;
+	}
+
+	.content-page #tblSkills td {
+		display: block;
+		width: 100%;
+	}
+
+	.content-page #education {
+		margin-bottom: 3rem;
+		padding: 3rem 1rem;
+	}
+}
+
+.home-page #aboutMe h2 {
+	font-family: 'Proxima Nova Light';
+	font-size: 1.15rem;
+	line-height: 1.5;
+}
+
+.home-page .home-list {
+	margin-bottom: 2rem;
+}
+
+.home-page .home-list .sub-title h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	white-space: nowrap;
+}
+
+.home-page .home-list #tblResearch {
+	margin-bottom: 2rem;
+}
+
+.home-page .home-list #tblResearch td {
+	padding: .85rem 1rem;
+}
+
+.home-page .home-list #tblResearch h4 {
+	font-size: 1.15rem;
+	line-height: 1.3;
+	margin-bottom: .25rem;
+}
+
+.home-page .home-list #tblResearch h5 {
+	font-size: 1rem;
+	line-height: 1.3;
+	margin-bottom: .25rem;
+}
+
+.home-page .home-list #tblResearch h6 {
+	font-size: .9rem;
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.home-page #aboutMe h2 {
+		font-size: 18px;
+		line-height: 1.5;
+		padding-right: 0;
+	}
+
+	.home-page .home-list {
+		margin-bottom: 1.25rem;
+	}
+
+	.home-page .home-list .sub-title h2 {
+		font-size: 1.3rem;
+		margin-bottom: .6rem;
+		white-space: nowrap;
+	}
+
+	.home-page .home-list #tblResearch {
+		margin-bottom: 1rem;
+	}
+
+	.home-page .home-list #tblResearch td,
+	.home-page .home-list #tblResearch td:first-child,
+	.home-page .home-list #tblResearch td:last-child {
+		padding: .35rem 0;
+	}
+
+	.home-page .home-list #tblResearch td:first-child {
+		text-align: left;
+	}
+
+	.home-page .home-list #tblResearch h4 {
+		font-size: .95rem;
+		line-height: 1.25;
+		margin-bottom: .15rem;
+	}
+
+	.home-page .home-list #tblResearch h5 {
+		font-size: .85rem;
+		line-height: 1.25;
+		margin-bottom: .15rem;
+	}
+
+	.home-page .home-list #tblResearch h6 {
+		font-size: .8rem;
+		line-height: 1.35;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.home-page #aboutMe h2 {
+		font-size: 23px;
+		line-height: 1.35;
+		margin-bottom: .45rem;
+	}
+
+	.home-page .home-list #tblResearch td {
+		padding: .65rem 1rem;
+	}
+
+	.home-page .home-list #tblResearch h4 {
+		font-size: 1.4rem;
+		line-height: 1.1;
+		margin-bottom: .2rem;
+	}
+
+	.home-page .home-list #tblResearch h5 {
+		font-size: 1.3rem;
+		line-height: 1.3;
+		margin-bottom: .2rem;
+	}
+
+	.home-page .home-list #tblResearch h6 {
+		font-size: 1.2rem;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.home-page .home-list #tblResearch td:first-child {
+		text-align: left !important;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.home-page .home-list #tblResearch td:first-child {
+		width: 28% !important;
+	}
+
+	.home-page .home-list #tblResearch td:last-child {
+		width: 72% !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.home-page .home-list #tblResearch td:first-child {
+		padding-top: .55rem;
+		padding-bottom: .05rem;
+	}
+
+	.home-page .home-list #tblResearch td:last-child {
+		padding-top: .1rem;
+	}
+
+	.home-page .home-list #tblResearch tr + tr td:first-child {
+		padding-top: .55rem;
+	}
 }
 
 

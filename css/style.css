@@ -1765,7 +1765,6 @@ body.content-page {
 }
 
 @media screen and (max-width: 900px) {
-	/* Education already has a padded parent, so avoid adding a second table margin. */
 	.content-page #education #tblEdu {
 		margin-left: 0;
 		margin-right: 0;
@@ -1801,10 +1800,6 @@ body.content-page {
 
 	.content-page #footer .row#nav {
 		margin-top: .75rem;
-	}
-
-	.content-page #footer .row.justify-content-center.align-items-center .col-auto:nth-child(2) {
-		display: none;
 	}
 
 	.content-page #footer .linkedin-icon-link {
